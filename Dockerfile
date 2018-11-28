@@ -11,6 +11,7 @@ LABEL description="Webserver"
 
 VOLUME /var/www/html
 EXPOSE 80
+WORKDIR /var/www/html
 
 ENTRYPOINT ["apachectl"]
 CMD ["-D", "FOREGROUND"]
