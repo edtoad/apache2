@@ -9,7 +9,7 @@ ENV APACHE_LOG_DIR="var/log/apache2"
 
 LABEL description="Webserver"
 
-VOLUME /var/www/html/
+VOLUME /var/www/html
 EXPOSE 80
 
 ENTRYPOINT ["apachectl"]
